@@ -1,0 +1,14 @@
+[package]
+name = "wgpu-demo"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Burn deep learning framework with wgpu backend
+burn = { version = "0.16", features = ["train", "wgpu", "autodiff"] }
+
+# Async runtime
+tokio = { version = "1", features = ["rt", "macros"] }
+
+# Random number generation
+rand = "0.8"
